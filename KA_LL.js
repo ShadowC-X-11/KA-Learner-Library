@@ -147,7 +147,7 @@ var KA_LL = {
 			var phim = m - (p + q - 1);
 			var en = m - 1;
 			while(KA_LL.gcd(en, m) !== 1){
-				var en = randomPrime(1, phim);
+				var en = KA_LL.randomPrime(1, phim);
 			}
 			var dn = KA_LL.modinv(en, phim);
 			returned.privKey = dn.toString() + "," + m.toString();
