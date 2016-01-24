@@ -118,11 +118,7 @@ var KA_LL = {
 		while(true){
 			var rnd = Math.floor(Math.random() * ((max - 1) - min + 1)) + min;
 			var s = Math.floor(Math.sqrt(rnd));
-			for(var i = 2; i <= s; i++){
-				if(rnd % i === 0){
-					continue;
-				}
-			}
+			if(!isPrime(rnd)) continue;
 			return rnd;
 		}
 	},
