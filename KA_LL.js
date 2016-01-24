@@ -106,7 +106,7 @@ var KA_LL = {
     },
 	isPrime: function(number){
 		// Checks if a number is prime
-		for(var i = 0; i <= floor(Math.sqrt(number)); i++){
+		for(var i = 0; i <= Math.floor(Math.sqrt(number)); i++){
 			if(number % i === 0){
 				return false;
 			}
