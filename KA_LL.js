@@ -162,6 +162,7 @@ var KA_LL = {
 		for(var i = 0; i < text.length; i++){
 			if(i !== 0) encMess += ", ";
 			var tmp = allowed.indexOf(text[i]);
+			alert(tmp);
 			if(tmp === -1){
 				tmp = allowed.indexOf("?");
 			}
