@@ -113,7 +113,7 @@ var KA_LL = {
 		}
 		return true;
 	},
-	generatePrime: function(min, max){
+	randomPrime: function(min, max){
 		// generates a random prime number
 		while(true){
 			var rnd = Math.floor(Math.random() * ((max - 1) - min + 1)) + min;
