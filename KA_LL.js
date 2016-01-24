@@ -163,7 +163,7 @@ var KA_LL = {
 				tmp = allowed.indexOf("?");
 			}
 			tmp = Math.pow(tmp, ek) % m;
-			encMess += tmp;
+			encMess += tmp.toString();
 		}
 		returned.encrptdMsg = encMess;
 		return returned;
